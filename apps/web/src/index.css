@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *, *::before, *::after { box-sizing: border-box; }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-surface-muted text-slate-900 font-sans;
+    min-height: 100vh;
+  }
+
+  h1, h2, h3 { @apply font-display tracking-tight; }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-brand-500 ring-offset-2;
+  }
+
+  ::-webkit-scrollbar       { width: 6px; height: 6px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { @apply bg-slate-200 rounded-pill; }
+  ::-webkit-scrollbar-thumb:hover { @apply bg-slate-300; }
+}
+
+@layer utilities {
+  .kpi-accent-bar {
+    height: 3px;
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    border-radius: 0;
+  }
+
+  .row-overdue           { @apply bg-status-overdue-row; }
+  .row-overdue:hover     { background-color: #fee2e2 !important; }
+
+  .card-interactive      { @apply transition-shadow duration-150 cursor-pointer; }
+  .card-interactive:hover{ @apply shadow-card-hover; }
+
+  .num { @apply font-mono tabular-nums tracking-tight; }
+}

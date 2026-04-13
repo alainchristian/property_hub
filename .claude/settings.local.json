@@ -1,0 +1,37 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(netstat:*)",
+      "Bash(xargs:*)",
+      "Bash(pnpm build:*)",
+      "Bash(ping:*)",
+      "Bash(timeout /t 10 /nobreak)",
+      "Bash(curl:*)",
+      "Bash(pnpm run migration:run:*)",
+      "Bash(pnpm run seed:*)",
+      "Bash(node:*)",
+      "Bash(pnpm run build:*)",
+      "Bash(ls -la \"C:\\\\Users\\\\Christian\\\\Desktop\\\\projects\\\\property_hub\\\\apps\\\\web\\\\src\\\\pages\\\\documents\"\" 2>nul || echo \"Directory not found or empty \")",
+      "Bash(ls -la \"C:\\\\Users\\\\Christian\\\\Desktop\\\\projects\\\\property_hub\\\\apps\\\\web\\\\src\\\\pages\\\\reports\"\" 2>nul || echo \"Directory not found or empty \")",
+      "Bash(findstr:*)",
+      "Bash(cmd.exe /c \"cd C:\\\\Users\\\\Christian\\\\Desktop\\\\projects\\\\property_hub\\\\apps\\\\web && pnpm build\")",
+      "Bash(powershell.exe -Command \"Set-Location ''C:\\\\Users\\\\Christian\\\\Desktop\\\\projects\\\\property_hub\\\\apps\\\\web''; pnpm build\")",
+      "Bash(pnpm test)",
+      "Bash(pnpm test:*)",
+      "Bash(pnpm add:*)",
+      "Bash(Get-Content \"C:\\\\Users\\\\Christian\\\\Desktop\\\\projects\\\\property_hub\\\\ecosystem.config.js\")",
+      "Bash(Get-Content \"C:\\\\Users\\\\Christian\\\\Desktop\\\\projects\\\\property_hub\\\\nginx\\\\nginx.conf\")",
+      "Bash(Select-Object -First 5)",
+      "Bash(Get-Content \"C:\\\\Users\\\\Christian\\\\Desktop\\\\projects\\\\property_hub\\\\scripts\\\\pg-backup.ps1\")",
+      "Bash(Get-Content \"C:\\\\Users\\\\Christian\\\\Desktop\\\\projects\\\\property_hub\\\\.github\\\\workflows\\\\deploy.yml\")",
+      "Bash(Select-Object -First 10)",
+      "Bash(npx vite build)",
+      "Bash(pnpm list:*)",
+      "Bash(npx vitest:*)",
+      "Bash(git remote add:*)",
+      "Bash(git add:*)",
+      "Bash(dir nul)",
+      "Bash(git reset:*)"
+    ]
+  }
+}
